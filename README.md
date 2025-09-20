@@ -117,3 +117,29 @@ Smoothed moving averages revealed long-term stock price trends.
 
 
 Use machine learning (LSTMs) for predictions
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/79e79b3f-6661-49e5-93f7-5d2927ff32f4" />
+
+<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/46e97f28-5921-455d-8057-78f8d7047526" />
+
+<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/006e2981-360e-486f-9c1f-297d015b9eeb" />
+
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/9df9454b-93d7-4ab0-85fd-8887f364a768" />
+
+<img width="1920" height="1080" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/bdcfac7b-5704-47f1-b85a-f420aa334732" />
+
+<img width="1920" height="1080" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/05a8a477-e008-4adb-9684-f754071b9f5a" />
+
+<img width="1920" height="1080" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/c61cea6c-aafe-439b-aded-ed84054b7738" />
+
+
+
+
+
+
+
+
+
+
+
+
+
