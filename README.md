@@ -115,8 +115,6 @@ Smoothed moving averages revealed long-term stock price trends.
 📆 Trend & seasonality detection in business data
 
 
-
-Use machine learning (LSTMs) for predictions
 <img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/79e79b3f-6661-49e5-93f7-5d2927ff32f4" />
 
 <img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/46e97f28-5921-455d-8057-78f8d7047526" />
