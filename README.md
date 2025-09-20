@@ -1,12 +1,12 @@
-⏳ Time Series Analysis & Visualization in Python
-📌 Overview
+**⏳ Time Series Analysis & Visualization in Python**
+**📌 Overview**
 
 This project demonstrates time series analysis and visualization using Python.
 It explores how stock price data changes over time and applies statistical techniques like trend detection, seasonality analysis, stationarity testing, differencing, and smoothing.
 
 The goal is to help understand time-based data and prepare it for forecasting models.
 
-🚀 Key Concepts Covered
+**🚀 Key Concepts Covered**
 
 Trend – Long-term direction of data.
 
@@ -24,7 +24,7 @@ Autocorrelation – Similarity between time series and its lagged version.
 
 Resampling – Changing data frequency (daily → monthly).
 
-📂 Dataset
+**📂 Dataset**
 
 We use a stock dataset (stock_data.csv) with columns like:
 
@@ -36,57 +36,50 @@ Volume, Open, Close, etc.
 
 👉 Make sure the dataset has a Date column for time-based analysis.
 
-⚙️ Installation & Requirements
+**⚙️Installation & Requirement**
+  Install dependencies:
 
-Clone the repo:
+  pip install pandas numpy seaborn matplotlib statsmodels
 
-git clone https://github.com/your-username/time-series-analysis.git
-cd time-series-analysis
+**📊 Steps Implemented**
+  1. Data Loading
+  df = pd.read_csv("stock_data.csv", parse_dates=True, index_col="Date")
 
+  2. Data Cleaning
 
-Install dependencies:
+  Dropped unnecessary columns:
 
-pip install pandas numpy seaborn matplotlib statsmodels
+  df.drop(columns=['Unnamed: 0'], inplace=True, errors='ignore')
 
-📊 Steps Implemented
-1. Data Loading
-df = pd.read_csv("stock_data.csv", parse_dates=True, index_col="Date")
+  3. Visualization – High Stock Prices
 
-2. Data Cleaning
+   Line plot of stock highs over time.
 
-Dropped unnecessary columns:
-
-df.drop(columns=['Unnamed: 0'], inplace=True, errors='ignore')
-
-3. Visualization – High Stock Prices
-
-Line plot of stock highs over time.
-
-4. Resampling
+  4. Resampling
 
 Resampled to monthly data using .resample('M').mean().
 
-5. Seasonality Detection
+  5. Seasonality Detection
 
 Autocorrelation plots with plot_acf().
 
-6. Stationarity Test
+ 6. Stationarity Test
 
 ADF test (adfuller) to check stationarity.
 
-7. Differencing
+ 7. Differencing
 
 Created high_diff column to remove trends.
 
-8. Moving Average
+ 8. Moving Average
 
 Smoothed data with a 120-day rolling mean.
 
-9. Comparison
+ 9. Comparison
 
 Plotted original vs differenced data and reran ADF test.
 
-📈 Outputs
+**📈 Outputs**
 
 📉 Line plot of stock prices over time
 
@@ -100,7 +93,7 @@ Plotted original vs differenced data and reran ADF test.
 
 📏 Moving average smoothing
 
-🏆 Results
+**🏆 Results**
 
 The raw stock data was non-stationary.
 
@@ -110,7 +103,7 @@ Seasonal patterns were detected using autocorrelation.
 
 Smoothed moving averages revealed long-term stock price trends.
 
-📌 Applications
+**📌 Applications**
 
 📊 Stock price analysis
 
@@ -120,10 +113,6 @@ Smoothed moving averages revealed long-term stock price trends.
 
 📆 Trend & seasonality detection in business data
 
-🔮 Future Work
 
-Build ARIMA/SARIMA forecasting models
-
-Apply exponential smoothing
 
 Use machine learning (LSTMs) for predictions
