@@ -1,4 +1,4 @@
-**⏳ Time Series Analysis & Visualization in Python**
+**⏳Time Series Analysis & Visualization in Python**
 
 **📌 Overview**
 
