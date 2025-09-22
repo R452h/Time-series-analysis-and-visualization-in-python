@@ -42,7 +42,7 @@ Volume, Open, Close, etc.
 
   pip install pandas numpy seaborn matplotlib statsmodels
 
-**📊 Steps Implemented**
+**📊Steps Implemented**
   1. Data Loading
   df = pd.read_csv("stock_data.csv", parse_dates=True, index_col="Date")
 
@@ -54,65 +54,65 @@ Volume, Open, Close, etc.
 
   3. Visualization – High Stock Prices
 
-   Line plot of stock highs over time.
+  Line plot of stock highs over time.
 
   4. Resampling
 
-Resampled to monthly data using .resample('M').mean().
+  Resampled to monthly data using .resample('M').mean().
 
   5. Seasonality Detection
 
-Autocorrelation plots with plot_acf().
+  Autocorrelation plots with plot_acf().
 
- 6. Stationarity Test
+  6. Stationarity Test
 
-ADF test (adfuller) to check stationarity.
+  ADF test (adfuller) to check stationarity.
 
- 7. Differencing
+  7. Differencing
 
-Created high_diff column to remove trends.
+  Created high_diff column to remove trends.
 
- 8. Moving Average
+  8. Moving Average
 
-Smoothed data with a 120-day rolling mean.
+  Smoothed data with a 120-day rolling mean.
 
- 9. Comparison
+  9. Comparison
 
-Plotted original vs differenced data and reran ADF test.
+  Plotted original vs differenced data and reran ADF test.
 
 **📈 Outputs**
 
-📉 Line plot of stock prices over time
+ 📉 Line plot of stock prices over time
 
-📊 Resampled monthly averages
+ 📊 Resampled monthly averages
 
-🔄 Autocorrelation plots to detect seasonality
+ 🔄 Autocorrelation plots to detect seasonality
 
-🧪 ADF test results for stationarity
+ 🧪 ADF test results for stationarity
 
-📉 Original vs Differenced series
+ 📉 Original vs Differenced series
 
-📏 Moving average smoothing
+ 📏 Moving average smoothing
 
 **🏆 Results**
 
-The raw stock data was non-stationary.
+ The raw stock data was non-stationary.
 
-After differencing, the data became stationary (confirmed via ADF test).
+ After differencing, the data became stationary (confirmed via ADF test).
 
-Seasonal patterns were detected using autocorrelation.
+ Seasonal patterns were detected using autocorrelation.
 
-Smoothed moving averages revealed long-term stock price trends.
+ Smoothed moving averages revealed long-term stock price trends.
 
 **📌 Applications**
 
-📊 Stock price analysis
+ 📊 Stock price analysis
 
-🌡️ Sensor/IoT time series
+ 🌡️ Sensor/IoT time series
 
-📉 Forecasting (ARIMA, SARIMA, LSTM etc.)
+ 📉 Forecasting (ARIMA, SARIMA, LSTM etc.)
 
-📆 Trend & seasonality detection in business data
+ 📆 Trend & seasonality detection in business data
 
 
 <img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/79e79b3f-6661-49e5-93f7-5d2927ff32f4" />
