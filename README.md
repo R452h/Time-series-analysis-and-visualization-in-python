@@ -22,7 +22,6 @@ We use a **stock dataset (`stock_data.csv`)** with columns like:
 
 ## ⚙️ Installation & Requirements
 Install dependencies:
-```bash
 pip install pandas numpy seaborn matplotlib statsmodels.
 
 ## 📊 Steps Implemented
