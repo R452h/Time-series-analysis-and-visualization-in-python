@@ -23,44 +23,30 @@ We use a **stock dataset (`stock_data.csv`)** with columns like:
 ## ⚙️ Installation & Requirements
 Install dependencies:
 ```bash
-pip install pandas numpy seaborn matplotlib statsmodels
+pip install pandas numpy seaborn matplotlib statsmodels.
 
-** 📊 Steps Implemented **
+## 📊 Steps Implemented
 
-Data Loading
+1. **Data Loading**
+   ```python
+   df = pd.read_csv("stock_data.csv", parse_dates=True, index_col="Date")
+2. **Data Cleaning**
+   df.drop(columns=['Unnamed: 0'], inplace=True, errors='ignore')
+3. **Visualization – High Stock Prices**
+📉 Line plot of stock highs over time
+4. **Resampling**
+   df.resample('M').mean()
+5. **Seasonality Detection**
+🔄 Autocorrelation plots with plot_acf()
+6. **Stationarity Test**
+🧪 ADF test (adfuller) to check stationarity
+7. **Differencing**
+   df['high_diff'] = df['High'].diff()
+8. **Moving Average**
+   df['rolling_mean'] = df['High'].rolling(window=120).mean()
+9. **Comparison** → Plotted original vs differenced data & reran ADF test
 
-df = pd.read_csv("stock_data.csv", parse_dates=True, index_col="Date")
-
-
-Data Cleaning
-
-df.drop(columns=['Unnamed: 0'], inplace=True, errors='ignore')
-
-
-Visualization – High Stock Prices → Line plot of stock highs over time
-
-Resampling
-
-df.resample('M').mean()
-
-
-Seasonality Detection → Autocorrelation plots with plot_acf()
-
-Stationarity Test → ADF test (adfuller) to check stationarity
-
-Differencing
-
-df['high_diff'] = df['High'].diff()
-
-
-Moving Average
-
-df['rolling_mean'] = df['High'].rolling(window=120).mean()
-
-
-Comparison → Plotted original vs differenced data & reran ADF test
-
-📈 Outputs
+**📈 Outputs**
 
 📉 Line plot of stock prices over time
 
@@ -74,7 +60,7 @@ Comparison → Plotted original vs differenced data & reran ADF test
 
 📏 Moving average smoothing
 
-🏆 Results
+**🏆 Results**
 
 The raw stock data was non-stationary
 
@@ -84,7 +70,7 @@ Seasonal patterns detected using autocorrelation
 
 Smoothed moving averages revealed long-term stock price trends
 
-📌 Applications
+**📌 Applications**
 
 📊 Stock price analysis
 
